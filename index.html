@@ -1,97 +1,37 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-        (function() {
-            emailjs.init("user_IeINXvWtHjAUHEs91ud0e");
-            })();
-   </script>
+    <title>Ajax Test</title>
+    <script type="text/javascript" src="main.js"></script>
 </head>
-
 <body>
     <header class="container-fluid">
-        <div class="row">
-            <a href="index.html">
-                <div class="col-md-12 logo"></div>
-            </a>
+    <div class="row">
+                <h3 class="section-heading uppercase"><span>Choose a destination</span></h3>
             </div>
-                <div class="row">
-                    <ul id="nav" class="list-inline clearfix">
-                        <li class="col-xs-6 col-sm-2 ui-menu-color-home menuitem">
-                            <a href="index.html" class="hvr-sweep-to-bottom"><span>Home</span></a>
-                        </li>
-                        <li class="col-xs-6 col-sm-2 ui-menu-color-mediteranean menuitem">
-                            <a href="" class="hvr-sweep-to-bottom"></i><span>Mediteranean</span></a>
-                        </li>
-                        <li class="col-xs-6 col-sm-2 ui-menu-color-caribean menuitem">
-                            <a href="" class="hvr-sweep-to-bottom"></i><span>Caribean</span></a>
-                        </li>
-                        <li class="col-xs-6 col-sm-2 ui-menu-color-family menuitem ">
-                            <a href="" class="hvr-sweep-to-bottom"><span>Family</span></a>
-                        </li>
-                        <li class="col-xs-6 col-sm-2 ui-menu-color-all-inclusive menuitem ">
-                            <a href="" class="hvr-sweep-to-bottom"><span>All Inclusive</span></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </header>
-    <section class="container-fluid">
-        <div class="row row-table">
-            <div class="col-xs-12 col-sm-12 col-md-4 bg-color-destination section-column">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h3 class="section-heading uppercase">Select Destination</h3>
-                    </div>
-                </div>
-                <div id="map"></div>
-            </div>
-            <section class="container-fluid ">
-        <div class="row bg-color-contact">
-            <div>
-                <h3 class="contact-heading uppercase text-center">Information or assistance?</h3>
-                <h5 class="uppercase text-center">Allow our agents to  help you choose that special holiday</h5>
-            </div>
-            <div class="center-form">
                 
-                <form onsubmit="return sendMail(this)"; method="POST">
-                    
-                    <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
-                    <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
-                    <textarea rows="5" name="projectsummary" class="form-control" id="enquirysummary" placeholder="Enquiry Description" required></textarea>
-                    <button type="submit" class="btn btn-secondary center-block">Send Agent Request</button>
-                </form>
-            </div>
-        </div>
-    </section>
-    <footer class="container-fluid ">
-        <div id="footer-details " class="row ">
-                  <div class="col-sm-4 ">
-                <h5 class="uppercase general-sub ">Follow us</h5>
-                <ul class="list-inline social-links ">
-                    <li><a target="_blank " href="# "><i class="fa fa-facebook "></i></a></li>
-                    <li><a target="_blank " href="# "><i class="fa fa-twitter "></i></a></li>
-                    <li><a target="_blank " href="# "><i class="fa fa-linkedin "></i></a></li>
-                    <li><a target="_blank " href="# "><i class="fa fa-pinterest "></i></a></li>
-                    <li><a target="_blank " href="# "><i class="fa fa-instagram "></i></a></li>
-                    <li><a target="_blank " href="# "><i class="fa fa-youtube "></i></a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-    <script src="assets/js/sendEmail.js"></script>
-    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+                <div id="map"></div>
+               <div class ="row"> 
+    <button onclick="writeToDocument('https://)">Mediteranien</button>
+    <button onclick="writeToDocument('https://')">Carribean</button>
+    <button onclick="writeToDocument('https://')">Europe</button>
+    <button onclick="writeToDocument('https://">Familly</button>
+    <button onclick="writeToDocument('https://')">All Inclusive</button>
+    <button onclick="writeToDocument('https:/')">Contact Us</button>
+   </div>
+    <div id="data"></div>
+    
+    </header>
+</body>
+<footer>
+     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDHHyac2SiOYPNYxXMK7rqJjnB8nCaaxE&callback=initMap"></script>
     <script src="assets/js/maps.js"></script>
-</body>
-
+</footer>
 </html>
+

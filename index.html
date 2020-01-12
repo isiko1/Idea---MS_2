@@ -1,37 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ajax Test</title>
     <script type="text/javascript" src="main.js"></script>
 </head>
+
 <body>
     <header class="container-fluid">
-    <div class="row">
-                <h3 class="section-heading uppercase"><span>Choose a destination</span></h3>
+        <div class="row">
+            <a href="index.html">
+                <div class="col-md-12 logo"></div>
+            </a>
             </div>
-                
-                <div id="map"></div>
-               <div class ="row"> 
-    <button onclick="writeToDocument('https://)">Mediteranien</button>
-    <button onclick="writeToDocument('https://')">Carribean</button>
-    <button onclick="writeToDocument('https://')">Europe</button>
-    <button onclick="writeToDocument('https://">Familly</button>
-    <button onclick="writeToDocument('https://')">All Inclusive</button>
-    <button onclick="writeToDocument('https:/')">Contact Us</button>
-   </div>
-    <div id="data"></div>
-    
-    </header>
-</body>
-<footer>
-     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+            <div class="row bg-color-name-title">
+                    <h3 class="destination">Looking for a Break?</h3>
+                       </div>    
+                <div class="row destinations">
+                         <button onclick="writeToDocument('https://www.skyscanner.net/news/10-mediterranean-destinations-you-cant-miss')">Mediterranien</button>
+                    <button onclick="writeToDocument('https://www.virginholidays.co.uk/destinations/caribbean-holidays')">Carribean</button>
+                    <button onclick="writeToDocument('https://www.europeanbestdestinations.com/destinations/')">Europe</button>
+                     <p class="wish">Choose one of our Recommended Destinations</p>
+                    </div>
+              <div id="data"></div> 
+              </header>
+        <section class="container-fluid">
+        <div class="row">
+                <div class="col-md-12">
+                    </div>
+                    <div id="map"></div>
+                </div>
+            </section>
+    <footer class="container-fluid no gutter">
+        <div id="footer-details " class="row">
+                  <div class="col-sm-4 ">
+                <h5 class="uppercase ">Follow Us</h5>
+            <ul class="list-inline social-links ">
+                    <li><a target="_blank " href="# "><i class="fa fa-facebook "></i></a></li>
+                    <li><a target="_blank " href="# "><i class="fa fa-twitter "></i></a></li>
+                    <li><a target="_blank " href="# "><i class="fa fa-linkedin "></i></a></li>
+                    <li><a target="_blank " href="# "><i class="fa fa-pinterest "></i></a></li>
+                    <li><a target="_blank " href="# "><i class="fa fa-instagram "></i></a></li>
+                    <li><a target="_blank " href="# "><i class="fa fa-youtube "></i></a></li>
+                </ul>
+             </div>
+        </div>
+    </footer>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDHHyac2SiOYPNYxXMK7rqJjnB8nCaaxE&callback=initMap"></script>
     <script src="assets/js/maps.js"></script>
-</footer>
+    	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+	<script src="script.js"></script> 
+    </body>
 </html>
-

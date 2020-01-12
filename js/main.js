@@ -1,2 +1,6 @@
-Modified coding from Rosie project, Ajex tutorial to create a basic travel web page.
-    
+var xhr =new XMLHttpRequest();
+xhr.onreadystatechange() = function(){
+    if (this.readystate == 4 && this.status == 400 ) {
+        document.getElementById("data").innerHTML = this.responseText
+    }   
+}
